@@ -143,3 +143,28 @@ Price Card
   left: 80%;
   font-size: 1.25em;
 }
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width:576px) and (max-width: 767px) {
+  .carousel-caption h1{
+    font-size: 2.5em;
+  }
+  .carousel-caption p{
+    font-size: 1em;
+  }
+  
+  .price-card label .card{
+    box-shadow: 0 0 10px #c0bfc4;
+  }
+  .price-card input[type=radio]:checked + label .card{
+    box-shadow: 0 0 10px #96b9ee;
+    transform: translateY(0);
+  }
+}
