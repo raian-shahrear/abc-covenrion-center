@@ -1,0 +1,147 @@
+/* .carousel-item{
+  position: relative;
+} */
+.background-cover{
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+}
+.carousel-item::before{
+  content: '';
+  background: linear-gradient(180deg, hsla(0, 3%, 7%, 0.2), hsla(0, 3%, 7%, 0.85));
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+.carousel-caption, 
+.carousel-indicators, 
+.carousel-control-prev, 
+.carousel-control-next{
+  z-index: 100;
+}
+.carousel-caption{
+  width: 40%;
+  bottom: 20%;
+  margin: 0 auto;
+}
+.carousel-caption h1{
+  font-size: 3.5em;
+  font-weight: 600;
+}
+.carousel-caption p{
+  font-size: 1.25em;
+}
+.slider-btn a{
+  background-color: #ffffff;
+  border: 2px solid transparent;
+  color: #3F87F5;
+  transition: all 0.3s;
+}
+.slider-btn a:hover{
+  background-color: transparent;
+  color: #ffffff;
+}
+
+
+/*================= 
+Toast & Moment Area 
+=================*/
+.toast{
+  border: 1px solid transparent;
+  border-left: 10px solid #3F87F5;
+  border-radius: 0;
+}
+.toast-body{
+  position: relative;
+}
+.toast-close-btn{
+  font-size: 14px;
+  position: absolute;
+  top: 10%;
+  left: 90%;
+}
+.moment-area-margin{
+  margin: 6.25rem 0;
+}
+
+
+/*======== 
+Price Card 
+========*/
+.priceCard-area-margin, .price-card{
+  margin-bottom: 6.25rem;
+}
+.price-card label .card{
+  display:inline-block;
+  border-radius: 20px;
+  box-shadow: 0 20px 10px #c0bfc4;
+  transition: transform 0.3s;
+}
+.price-card label .card .card-text, .card-requirement{
+  color: #848199;
+}
+.price-card input[type=radio]{
+  display: none;
+}
+.price-card input[type=radio]:checked + label .card{
+  background-color: #3F87F5;
+  background-image: url(./images/watermark.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  box-shadow: 0 20px 10px #96b9ee;
+  transform: translateY(-1.25rem);
+}
+.price-card input[type=radio]:checked + label .card,
+.price-card input[type=radio]:checked + label .card .card-text,
+.price-card input[type=radio]:checked + label .card .card-requirement{
+  color: #ffffff;
+}
+.price-card input[type=radio]:checked + label .card .card-requirement ul li i{
+  background-color: rgba(82, 67, 194, 0.103693);
+  color: #ffffff;
+}
+.price-card input[type=radio]:checked + label .card .card-btn input[type=submit]{
+  background-color: #ffffff;
+  border: 2px solid transparent;
+  color: #3F87F5;
+  transition: all 0.3s linear 0.1s;
+}
+.price-card input[type=radio]:checked + label .card .card-btn input[type=submit]:hover{
+  background-color: transparent;
+  border-color: #ffffff;
+  color: #ffffff;
+}
+.price-card input[type=radio]:checked + label .card .card-btn .btn-enable{
+  display: inline-block;
+}
+.price-card input[type=radio]:checked + label .card .card-btn .btn-disable{
+  display: none;
+}
+
+.card{
+  position:relative;
+  border-color: transparent; 
+  width: 18.75rem; 
+}
+.card-requirement ul li i{
+  background-color: rgba(82, 67, 194, 0.103693);
+  color: #5243C2;
+}
+.card-btn input[type=submit]{
+  background-color: rgba(82, 67, 194, 0.103693);
+  border: 2px solid transparent;
+  color: #3F87F5;
+  transition: all 0.3s;
+}
+.btn-enable{
+  display: none;
+}
+.badge{
+  position: absolute;
+  top: 0%;
+  left: 80%;
+  font-size: 1.25em;
+}
