@@ -1,6 +1,4 @@
-/* .carousel-item{
-  position: relative;
-} */
+
 .background-cover{
   height: 100vh;
   object-fit: cover;
@@ -121,7 +119,7 @@ Price Card
   display: none;
 }
 
-.card{
+.price-card .card{
   position:relative;
   border-color: transparent; 
   width: 18.75rem; 
